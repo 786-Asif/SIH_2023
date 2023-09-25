@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIH project</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img style="z-index: +2" src="./image/emblem-dark.png" />
+        <div class="ministry">
+          <span
+            class="textH_minis"
+            style="color: rgb(30, 28, 28); margin-bottom: 10px; z-index: +2"
+            >कोयला मंत्रालय
+          </span>
+          <b>
+            <span class="text_minis" style="color: rgb(30, 28, 28)"
+              >Ministry of Coal</span
+            >
+          </b>
+        </div>
+        <div class="pmsakti">
+          <img class="sakti" src="./image/pmgatisakti.png" />
+          <img
+            class="g20"
+            src="./image//g20-logo.png"
+            style="margin-left: 10px"
+          />
+          <img class="pic" src="./image/coalblock1.jpeg" />
+          <img class="azadi" src="./image/azadi.jpg" />
+          <img class="swachh" src="./image/swach-bharat.png" />
+        </div>
+      </div>
+      <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Major statics</a>
+        <a href="#">Organisations</a>
+        <a href="#">Tenders</a>
+        <a href="#">Acts & Policies</a>
+        <a href="#">Public Information</a>
+        <a href="#">Media</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="./image/FvMtleFagAIWiJV.jpeg" style="width: 100%" height="500px" />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="./image/man ki baat.jpg" style="width: 100%" />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="./image/swachhata-19.jpg" style="width: 100%" />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="./image/banner_1.jpg" style="width: 100%" />
+          <div class="text"></div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+
+      <div
+        class="chat-minister"
+        style="background-image: url('./image/bg_image2.avif')"
+      >
+        <div class="image-container">
+          <img src="./image/chat3-fotor.png" alt="Image" />
+          <div class="message-box">Click to Open Chatbot</div>
+        </div>
+
+        <div class="minister">
+          <div class="pm">
+            <div>
+              <img src="./image/prime-minister.jpg" alt="" />
+            </div>
+            <div>
+              <h2>Shri Narendra Modi</h2>
+              <p>Prime Minister of India</p>
+              <button>
+                <a href="https://www.pmindia.gov.in/en/" target="_blank">VIEW PORTFOLIO</a>
+              </button>
+            </div>
+          </div>
+          <div class="coal-mini">
+            <div>
+              <img src="./image/PralhadJoshi.jpg" />
+            </div>
+            <div>
+              <h2>Shri Pralhad Joshi</h2>
+              <p>Minister of Coal, Mines &</p>
+              <p>Parliamentary Affairs</p>
+              <button>
+                <a href="https://coal.nic.in/en/minister/shri-pralhad-joshi"
+                 target="_blank" >VIEW PORTFOLIO</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="mos">
+            <div>
+              <img src="./image/Raosaheb1.jpeg" />
+            </div>
+            <div>
+              <h2>Shri Raosaheb Patil Danve</h2>
+              <p>Hon'ble MoS for Rail, Coal & Mines</p>
+              <button>
+                <a
+                  href="https://coal.nic.in/en/minister/shri-raosaheb-patil-danve"
+                  target="_blank">VIEW PORTFOLIO</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table" style="background-image: url(./image/bg_image_table.jpg);">
+        <div class="news">
+        <div class="holder">
+          <b>
+            <div class="pics">
+          <i class="fa-regular fa-newspaper"></i>
+          <span style="text-align: center;">WHAT'S NEWS</span>
+          </b>
+          </div>
+          <ul id="ticker01">
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">The first thing that most Javascript programmers</a>
+              <hr>
+            </li>
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">End up doing is adding some code</a>
+              <hr>
+            </li>
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">The code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>08/10/2007</span
+              ><a href="#">Inside of which is the code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>08/10/2007</span
+              ><a href="#">Right when the page is loaded</a>
+              v
+            </li>
+            <li>
+              <span>05/10/2007</span
+              ><a href="#">Problematically, however, the Javascript code</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">The first thing that most Javascript programmers</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">End up doing is adding some code</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">The code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>03/10/2007</span
+              ><a href="#">Inside of which is the code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>03/10/2007</span
+              ><a href="#">Right when the page is loaded</a>
+              <hr>
+            </li>
+            <li>
+              <span>01/10/2007</span
+              ><a href="#">Problematically, however, the Javascript code</a>
+              <hr>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="news">
+        <div class="holder">
+          <b>
+            <div class="pics">
+          <i class="fa-regular fa-newspaper"></i>
+          <span style="text-align: center;">PRESS RELEASES</span>
+          </b>
+          </div>
+          <ul id="ticker01">
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">The first thing that most Javascript programmers</a>
+              <hr>
+            </li>
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">End up doing is adding some code</a>
+              <hr>
+            </li>
+            <li>
+              <span>10/10/2007</span
+              ><a href="#">The code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>08/10/2007</span
+              ><a href="#">Inside of which is the code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>08/10/2007</span
+              ><a href="#">Right when the page is loaded</a>
+              v
+            </li>
+            <li>
+              <span>05/10/2007</span
+              ><a href="#">Problematically, however, the Javascript code</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">The first thing that most Javascript programmers</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">End up doing is adding some code</a>
+              <hr>
+            </li>
+            <li>
+              <span>04/10/2007</span
+              ><a href="#">The code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>03/10/2007</span
+              ><a href="#">Inside of which is the code that you want to run</a>
+              <hr>
+            </li>
+            <li>
+              <span>03/10/2007</span
+              ><a href="#">Right when the page is loaded</a>
+              <hr>
+            </li>
+            <li>
+              <span>01/10/2007</span
+              ><a href="#">Problematically, however, the Javascript code</a>
+              <hr>
+            </li>
+          </ul>
+        </div>
+      </div>
+       <div class="pdfs">
+        <div class="ncl">
+          <a href="https://coaldashboard.cmpdi.co.in/" target="_blank">NATIONAL COAL PORTAL</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="cba">
+          <a href="https://www.mstcecommerce.com/auctionhome/coalblock/index.jsp" target="_blank">COAL BLOCK AUCTION</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="srcm">
+          <a href="https://starrating.coal.gov.in/" target="_blank">STAR RATING OF COAL MINES</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+        </div>
+        <div class="strcls">
+          <a href="https://scienceandtech.cmpdi.co.in/" target="_blank">STRCLS</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <p>Science and Technology Research in coal and lignite sector</p>
+        </div>
+        <div class="swcs">
+          <a href="https://swcs.coal.gov.in/admin/signin/" target="_blank">SWCS</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <p>Single Window Clearence System</p>
+        </div>
+        <div class="cims">
+          <a href="https://imports.gov.in/CIMS/public/home" target="_blank">CIMS</a>
+          <span style="margin-left:10px;color:white"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <p>Coal Import Monitoring System</p>
+        </div>
+       </div>
+    </div>
+
+    <div class="footer">
+      <div class="pmsakti">
+       <a href="https://www.makeinindia.com/home" target="_blank" ><img class="sakti" src="./image/makeinindia.png" /></a>
+      <a href="https://pmnrf.gov.in/en/"  ><img
+          class="g20"
+          src="./image/pmnrf.png"
+          style="margin-left: 10px"
+        /></a>
+        <a href="https://www.incredibleindia.org/content/incredible-india-v2/en.html" target="_blank"><img class="pic" src="./image/incredible-india.png" /></a>
+        <a href="https://www.digitalindiaportal.co.in/" target="_blank"> <img class="azadi" src="./image/digital_india.png" /></a>
+        <a href="https://www.india.gov.in/" target="_blank"><img class="swachh" src="./image/india-gov.png" /></a>
+        <a href="https://data.gov.in/" target="_blank"><img class="swachh" src="./image/data-gov.png" /></a>
+      </div>
+    </div>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+
+      jQuery.fn.liScroll = function (settings) {
+        settings = jQuery.extend(
+          {
+            travelocity: 0.03,
+          },
+          settings
+        );
+        return this.each(function () {
+          var $strip = jQuery(this);
+          $strip.addClass("newsticker");
+          var stripHeight = 1;
+          $strip.find("li").each(function (i) {
+            stripHeight += jQuery(this, i).outerHeight(true); // thanks to Michael Haszprunar and Fabien Volpi
+          });
+          var $mask = $strip.wrap("<div class='mask'></div>");
+          var $tickercontainer = $strip
+            .parent()
+            .wrap("<div class='tickercontainer'></div>");
+          var containerHeight = $strip.parent().parent().height(); //a.k.a. 'mask' width
+          $strip.height(stripHeight);
+          var totalTravel = stripHeight;
+          var defTiming = totalTravel / settings.travelocity; // thanks to Scott Waye
+          function scrollnews(spazio, tempo) {
+            $strip.animate(
+              { top: "-=" + spazio },
+              tempo,
+              "linear",
+              function () {
+                $strip.css("top", containerHeight);
+                scrollnews(totalTravel, defTiming);
+              }
+            );
+          }
+          scrollnews(totalTravel, defTiming);
+          $strip.hover(
+            function () {
+              jQuery(this).stop();
+            },
+            function () {
+              var offset = jQuery(this).offset();
+              var residualSpace = offset.top + stripHeight;
+              var residualTime = residualSpace / settings.travelocity;
+              scrollnews(residualSpace, residualTime);
+            }
+          );
+        });
+      };
+
+      $(function () {
+        $("ul#ticker01").liScroll();
+      });
+    </script>
+  </body>
+</html>
+

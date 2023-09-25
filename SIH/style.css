@@ -1,0 +1,502 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+body {
+  overflow-y: scroll;
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+.header {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  display: flex;
+  z-index: +50;
+  position: fixed;
+  margin-top: -8px;
+  margin-left: -8px;
+  padding: 8px;
+  border: 2px solid rgb(217, 209, 209);
+}
+.header img {
+  margin-right: 10px;
+  height: auto;
+  margin-left: 50px;
+}
+.ministry {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  padding: 10px;
+  margin-top: 20px;
+  z-index: +2;
+  cursor: pointer;
+}
+.text_minis {
+  font-size: 28px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.textH_minis {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pmsakti {
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-right: 25px;
+  cursor: pointer;
+}
+.pmsakti img sakti {
+  align-items: center;
+  height: 60px;
+  width: 250px;
+  cursor: pointer;
+}
+
+.pmsakti img g20 {
+  align-items: center;
+  margin-top: 23px;
+  height: 60px;
+  width: 250px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.pic {
+  margin-top: 12px;
+  margin-left: 28px;
+}
+.pic img {
+  height: 80px;
+  cursor: pointer;
+}
+.azadi {
+  margin-left: 38px;
+  cursor: pointer;
+}
+.swachh {
+  margin-left: 35px;
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #b30863;
+  height: 50px;
+  margin-left: -8px;
+  margin-right: -9px;
+  margin-top: 5px;
+  padding-top: 150px;
+}
+.navbar a {
+  margin-right: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  margin-top: 8px;
+}
+a :hover {
+  background-color: rgb(215, 185, 241);
+}
+
+.mySlides {
+  display: none;
+  min-height: 100%;
+  background-size: cover;
+}
+.mySlides img {
+  /* vertical-align: middle; */
+  width: 100%;
+  background-size: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  background-size: cover;
+  max-height: 100%;
+  width: 100%;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 1s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background-color: grey;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+/* .chat-bot img{
+    height: 450px;
+    width: auto;
+}
+.chat-bot img :hover{
+   background-color: yellow;
+} */
+/* styles.css */
+.image-container {
+  width: 25%;
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  margin-top: -10px;
+  max-width: 120%;
+  height: 500px;
+  margin-left: -50px;
+}
+
+.message-box {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 80%;
+  padding: 15px;
+  margin-top: 35px;
+  background-color: #473b3b;
+  color: #fff;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.image-container:hover .message-box {
+  display: block;
+}
+
+.chat-minister {
+  display: flex;
+  justify-content: space-around;
+}
+.chat-minister img {
+  background-repeat: no-repeat;
+}
+.minister {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid rgb(213, 210, 210); */
+  padding: 10px;
+  margin-left: -20px;
+  margin-right: 50px;
+  padding-left: 20px;
+}
+.pm {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+.pm h2 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.pm p {
+  margin-left: 25px;
+}
+.pm button {
+  margin-left: 25px;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.pm button a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.coal-mini {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 22px;
+}
+.coal-mini h2 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.coal-mini p {
+  margin-left: 25px;
+}
+.coal-mini button {
+  margin-left: 25px;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.coal-mini button a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.mos {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.mos h2 {
+  margin-left: 25px;
+  font-size: 20px;
+}
+.mos p {
+  margin-left: 25px;
+}
+.mos button {
+  margin-left: 25px;
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mos button a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+.mos img {
+  border: 2px solid rgb(218, 217, 217);
+}
+
+.table {
+  height: 500px;
+  display: flex;
+}
+.table img {
+  background-size: cover;
+}
+.news {
+  margin-top: 50px;
+}
+
+.holder {
+  padding-top: 20px;
+  margin-left: 110px;
+  background-color: white;
+  width: 330px;
+  height: 380px;
+  overflow: hidden;
+  padding: 15px;
+  font-family: Helvetica;
+}
+.pics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+}
+.holder .mask {
+  position: relative;
+  left: 15px;
+  top: 10px;
+  width: 300px;
+  height: 240px;
+  overflow: hidden;
+}
+.holder ul {
+  list-style: none;
+  margin: 20;
+  padding: 3;
+  position: relative;
+}
+.holder ul li {
+  padding: 10px 0px;
+}
+.holder ul li a {
+  color: darkred;
+  text-decoration: none;
+}
+
+.pdfs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 350px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+/* .pdfs div {
+  padding: 15px;
+  margin-bottom: 10px;
+} */
+.ncl{
+    background-color: #DF3322;
+    border: 2px solid rgb(108, 4, 4);
+    padding:  20px;
+    margin-bottom: 10px;
+}
+.ncl a{
+    text-decoration: none;
+    background-color: #DF3322;
+    color: white;
+}
+.cba{
+    background-color:#AB4509;
+    border: 2px solid rgb(141, 24, 24);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.cba a{
+    text-decoration: none;
+    color: white;
+}
+.srcm{
+    background-color:#A6690C;
+    border: 2px solid rgb(171, 74, 5);
+    padding: 20px;
+    display: flex;
+    margin-bottom: 10px;
+}
+.srcm a{
+    text-decoration: none;
+    color: white;
+}
+.strcls{
+    background-color:#A52A2A;
+    border: 2px solid rgb(65, 24, 2);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.strcls a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.strcls p{
+    font-size: 12px;
+    color: white;
+    margin-left: 20px;
+}
+.swcs{
+    background-color:#800000;
+    border: 2px solid rgb(118, 2, 45);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.swcs a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.swcs p{
+    font-size: 12px;
+    color: white;
+    margin-left: 20px;
+}
+.cims{
+    background-color:#900C3F;
+    border: 2px solid rgb(73, 1, 28);
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.cims a{
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+}
+.cims p{
+    font-size: 12px;
+    color: white;
+    margin-left: 20px;
+}
+
+.footer{
+    background-color: rgb(231, 208, 231);
+    margin-bottom: -6px;
+}
+
+
+
+
